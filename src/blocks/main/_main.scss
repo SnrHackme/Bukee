@@ -11,7 +11,10 @@ $accent-color: #65e496;
 	background-repeat: no-repeat;
 	background-size: cover;
 	color: $light-color;
-	padding-bottom: 50px;
+	padding-bottom: 161px;
+}
+.page {
+	padding-top: 161px;
 }
 .header {
 	display: flex;
@@ -61,6 +64,12 @@ $accent-color: #65e496;
 		margin-bottom: 30px;
 		margin-top: 3px;
 	}
+	&__name-top {
+		margin-top: 16px;
+		margin-left: 0;
+		margin-bottom: 19px;
+		letter-spacing: 2px;
+	}
 	&__title {
 		font-size: 48px;
 		font-weight: 700;
@@ -70,7 +79,7 @@ $accent-color: #65e496;
 			display: block;
 			color: $accent-color;
 			font-size: 18px;
-			margin-top: 9px;
+			margin-top: 11px;
 			letter-spacing: 0.9px;
 		}
 	}
@@ -92,7 +101,13 @@ $accent-color: #65e496;
 		margin-top: 48px;
 		padding: 16px 0;
 		letter-spacing: 1.7px;
-		margin-bottom: 20px;
+		margin-bottom: 17px;
+	}
+	small {
+		font-family: 'Open Sans', serif;
+		letter-spacing: 0.2px;
+		font-style:italic;
+		margin-left: -3px;
 	}
 }
 .block-book {
@@ -105,5 +120,45 @@ $accent-color: #65e496;
 		background-image: url(../../img/book.svg);
 		background-repeat: no-repeat;
 		margin-right: 55px;
+	}
+}
+.block-autor {
+	display: flex;
+	justify-content: space-between;
+}
+.block-ava {
+	position: relative;
+	&__svg {
+		position: absolute;
+		z-index: -1;
+		right: 0;
+	}
+	&__img {
+		margin-right: 44px;
+		margin-top: 47px;
+	}
+}
+.block-counter {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 161px;
+    padding: 0px 61px 0 87px;
+	p:first-child {
+		margin-right: 20px;
+	}
+	p {
+		font-family: 'Open Sans', serif;
+		text-align: center;
+		font-size: 18px;
+		letter-spacing: 0.7px;
+		span {
+			font-family: 'Roboto Slab', serif;
+			display: block;
+			font-weight: 100;
+			font-size: 80px;
+			color: $accent-color;
+			margin-bottom: 12px;
+			letter-spacing: 3px;
+		}
 	}
 }
