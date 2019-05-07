@@ -141,6 +141,33 @@ $bg-dark-color: #44444f;
 		background-image: url(../../img/book.svg);
 		background-repeat: no-repeat;
 		margin-right: 55px;
+		position: relative;
+		&__title {
+			font-size: 36px;
+			text-transform: uppercase;
+			position: absolute;
+			top: 120px;
+			left: 131px;
+			letter-spacing: 1.4px;
+			span {
+				font-family: 'Open Sans', serif;
+				font-size: 14px;
+				color: $accent-color;
+				display: block;
+				text-transform: initial;
+				letter-spacing: 0.7px;
+				margin-top: 10px;
+			}
+		}
+		&__author {
+			font-family: 'Open Sans', serif;
+			font-size: 14px;
+			color: $accent-color;
+			position: absolute;
+			bottom: 52px;
+			left: 87px;
+			letter-spacing: 0.7px;
+		}
 	}
 }
 .block-autor {
@@ -222,7 +249,7 @@ $bg-dark-color: #44444f;
 					position: absolute;
 					left: 0;
 					top: 1px;
-					background-color: $accent-color;
+					background-color: #5fc9b3;
 					color: $light-color;
 					padding: 0 7px;
 				}
