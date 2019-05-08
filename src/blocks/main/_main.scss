@@ -306,3 +306,73 @@ $bg-dark-color: #44444f;
 		}
 	}
 }
+
+.block-product {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 84px;
+	&-item{
+		flex-basis: 31.5%;
+	}
+	&-demo {
+		display: block;
+		width: 269px;
+		height: 409px;
+		background-image: url(../../img/book-mini.svg);
+		background-repeat: no-repeat;
+		position: relative;
+		&__title {
+			font-size: 24px;
+			font-weight: 700;
+			text-transform: uppercase;
+			position: absolute;
+			top: 71px;
+			left: 83px;
+			letter-spacing: 1px;
+			color: $light-color;
+			span {
+				font-family: 'Open Sans', serif;
+				font-size: 12px;
+				color: $accent-color;
+				display: block;
+				text-transform: initial;
+				letter-spacing: 0.65px;
+				margin-top: 8px;
+				font-weight: 400;
+				margin-left: -12px;
+			}
+		}
+		&__author {
+			font-family: 'Open Sans', serif;
+			font-size: 12px;
+			color: $accent-color;
+			position: absolute;
+			bottom: 14px;
+			left: 80px;
+			letter-spacing: 0.65px;
+			font-weight: 400;
+		}
+	}
+	&-text {
+		text-align: center;
+		max-width: 289px;
+		h3 {
+			margin-top: 35px;
+			margin-left: -15px;
+		}
+		p {
+			margin-top: 17px;
+    		margin-bottom: 17px;
+		}
+		a {
+			text-transform: uppercase;
+			color: $accent-color;
+			text-decoration: none;
+			font-size: 15px;
+			font-family: 'Open Sans', serif;
+			font-weight: 700;
+			letter-spacing: 1.2px;
+			margin-left: -15px;
+		}
+	}
+}
