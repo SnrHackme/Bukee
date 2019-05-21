@@ -34,6 +34,19 @@ $bg-dark-color: #44444f;
 		font-size: 18px;
 		letter-spacing: 0.9px;
 	}
+	&__btn {
+		background: linear-gradient(to top left,#65e49c,#65e4af,);
+		border: none;
+		color: $light-color;
+		text-decoration: none;
+		border-radius: 3px;
+		text-align: center;
+		font-size: 18px;
+		margin-top: 28px;
+		padding: 14px 45px;
+		letter-spacing: 0.7px;
+		box-shadow: 0 -2px #adedbb inset;
+	}
 }
 .header {
 	display: flex;
@@ -77,6 +90,9 @@ $bg-dark-color: #44444f;
 }
 .block-text {
 	flex-basis: calc(93% - 500px);
+	&--width {
+		flex-basis: calc(93% - 520px);
+	}
 	&__name {
 		font-family: 'Open Sans', serif;
 		font-size: 18px;
@@ -112,7 +128,7 @@ $bg-dark-color: #44444f;
 	}
 	&__btn {
 		display: block;
-		background-color: $accent-color;
+		background: linear-gradient(to top left,#65e49c,#65e4af,);
 		color: $light-color;
 		text-decoration: none;
 		max-width: 250px;
@@ -123,12 +139,49 @@ $bg-dark-color: #44444f;
 		letter-spacing: 1.7px;
 		margin-bottom: 16px;
 		font-size: 16px;
+		box-shadow: 0 -2px #adedbb inset;
+	}
+	&__btn--main {
+		box-shadow: 0 -2px #59ba88 inset;
 	}
 	small {
 		font-family: 'Open Sans', serif;
 		letter-spacing: 0.5px;
 		font-style:italic;
 		margin-left: -3px;
+	}
+	&-item {
+		margin-bottom: 55px;
+		&__date {
+			font-size: 15px;
+			font-family: 'Open Sans', serif;
+			letter-spacing: 0.8px;
+			margin-bottom: 4px;
+		}
+		&__title {
+			font-size: 18px;
+			letter-spacing: 0.9px;
+			margin-bottom: 15px;
+		}
+		&__desc {
+			font-size: 15px;
+			font-family: 'Open Sans', serif;
+			letter-spacing: 0.75px;
+		}
+		&__btn {
+			display: block;
+			background: linear-gradient(to top left,#65e49c,#65e4af,);
+			color: $light-color;
+			text-decoration: none;
+			max-width: 137px;
+			border-radius: 3px;
+			text-align: center;
+			margin-top: 24px;
+			padding: 12px 0;
+			letter-spacing: 1.7px;
+			font-size: 16px;
+			box-shadow: 0 -2px #adedbb inset;
+		}
 	}
 }
 .block-book {
@@ -181,9 +234,15 @@ $bg-dark-color: #44444f;
 		z-index: -1;
 		right: 0;
 	}
+	&__svg--left {
+		right: inherit;
+	}
 	&__img {
 		margin-right: 44px;
 		margin-top: 47px;
+	}
+	&__img--left {
+		margin-left: 44px;
 	}
 }
 .block-counter {
@@ -257,7 +316,7 @@ $bg-dark-color: #44444f;
 		}
 		&__btn {
 			color: $light-color;
-			background-color: $accent-color;
+			background: linear-gradient(to top left,#65e49c,#65e4af,);
 			border: none;
 			font-size: 18px;
 			padding: 15px 44px;
@@ -268,6 +327,7 @@ $bg-dark-color: #44444f;
 			&:focus {
 				outline: none;
 			}
+			box-shadow: 0 -2px #adedbb inset;
 		}
 	}
 }
